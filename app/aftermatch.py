@@ -2,7 +2,7 @@ import sys
 from pathlib import Path
 sys.path.append(str(Path(__file__).resolve().parents[1]))
 
-import streamlit as st
+import streamlit as st # type: ignore
 from datetime import datetime, UTC
 from src.data.db import init_db, save_feedback
 
